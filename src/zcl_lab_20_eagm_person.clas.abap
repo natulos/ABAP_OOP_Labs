@@ -1,0 +1,25 @@
+CLASS zcl_lab_20_eagm_person DEFINITION
+  PUBLIC
+*  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS:
+      set_name FINAL IMPORTING iv_name TYPE string.
+
+  PROTECTED SECTION.
+    DATA:
+        name TYPE string.
+
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_LAB_20_EAGM_PERSON IMPLEMENTATION.
+
+
+  METHOD set_name.
+    me->name = iv_name.
+  ENDMETHOD.
+ENDCLASS.

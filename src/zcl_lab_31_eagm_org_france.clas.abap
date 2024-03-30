@@ -1,0 +1,22 @@
+CLASS zcl_lab_31_eagm_org_france DEFINITION
+  PUBLIC
+  INHERITING FROM zcl_lab_29_eagm_organization
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS:
+      get_location REDEFINITION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_LAB_31_EAGM_ORG_FRANCE IMPLEMENTATION.
+
+
+  METHOD get_location.
+    rv_location = 'ORG_FRANCE'.
+  ENDMETHOD.
+ENDCLASS.

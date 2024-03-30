@@ -1,0 +1,22 @@
+CLASS zcl_lab_30_eagm_org_germany DEFINITION
+  PUBLIC
+  INHERITING FROM zcl_lab_29_eagm_organization
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    METHODS:
+        get_location REDEFINITION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_LAB_30_EAGM_ORG_GERMANY IMPLEMENTATION.
+
+
+  METHOD get_location.
+    rv_location = 'ORG_GERMANY'.
+  ENDMETHOD.
+ENDCLASS.

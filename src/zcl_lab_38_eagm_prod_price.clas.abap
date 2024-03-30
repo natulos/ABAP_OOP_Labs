@@ -1,0 +1,25 @@
+CLASS zcl_lab_38_eagm_prod_price DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    DATA:
+        price TYPE i.
+
+     METHODS
+      get_price RETURNING VALUE(rv_price) TYPE i.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS ZCL_LAB_38_EAGM_PROD_PRICE IMPLEMENTATION.
+
+
+  METHOD get_price.
+    rv_price = me->price.
+  ENDMETHOD.
+ENDCLASS.

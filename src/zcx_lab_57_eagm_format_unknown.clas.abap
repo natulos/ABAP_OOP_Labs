@@ -1,0 +1,15 @@
+CLASS zcx_lab_57_eagm_format_unknown DEFINITION
+  PUBLIC
+  FINAL
+  INHERITING FROM cx_static_check
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+
+
+CLASS zcx_lab_57_eagm_format_unknown IMPLEMENTATION.
+ENDCLASS.
